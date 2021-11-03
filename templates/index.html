@@ -11,9 +11,8 @@
     <h1>{{ title }}</h1>
         <ol>
         {% for order in orders  %}
-            <li><a href="">{{ order.customer_name }}: {{ order.order_date }}: {{ order.quantity  }}</li>
+            <li><a href="/individualOrder">{{ order.customer_name }}: {{ order.order_date }}: {{ order.quantity  }}</li>
                 {% endfor %}</a>
-                <li><a href="/orders/{{orders.index(order)}}">link to order</a></li>
         </ol>
 </body>
 </html>

@@ -11,7 +11,7 @@ def index():
     return render_template('index.html', title="Order list", orders=orders )
 
 
-@app.route('/orders/<index>')
-def order_index():
-    return render_template('order.html', title="order", orders=orders[1])
+# @app.route('/orders/<index>')
+# def order_index():
+#     return render_template('order.html', title="order", orders=orders[1])
     
